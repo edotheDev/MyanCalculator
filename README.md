@@ -1,6 +1,6 @@
 # MyanCalculator
 
-A simple web app where you can find a mini multiple web apps that will help you to calculate specific things.
+A simple web app where you can find a mini-multiple web app that will help you calculate specific things.
 
 ### List of mini web apps:
 
@@ -8,4 +8,4 @@ A simple web app where you can find a mini multiple web apps that will help you 
 
 #### KanCalculator
 
-A simple mini web app where you can calculate your luck for lottery. All you need is the price of ticket and the number of tickets you bought. Then you will get the result of your luck. The language of this web app is Myanmar.
+A simple mini-web app where you can calculate your luck for the lottery. All you need is the number of tickets you bought and the total number of tickets in the lottery. Then you will get the result of your luck. The language of this web app is Myanmar.
