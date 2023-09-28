@@ -1,0 +1,106 @@
+/* Form.css */
+.my-form {
+    margin-top: var(--c-margin-top);
+    max-width: 850px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: var(--spacer);
+}
+
+.tbxContainer {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    gap: 25px;
+}
+.tbxContainer *{
+    font-size: var(--b-text-font-size);
+}
+label{
+    width: fit-content;
+}
+.text-input {
+    width: calc(100% - 50px);
+    text-align: center;
+    padding: 1.3rem;
+    align-items: center;
+    border-radius: var(--border-radius);
+    border: 4px solid #A8F961;
+    background: #F5F5F5;
+    color: var(--p-black);
+    transition: 300ms ease-in-out;
+}
+.text-input:hover, .text-input:focus {
+    box-shadow: 0 0 10px 0 #A8F961;
+}
+.text-input.error {
+    border: 4px solid red;
+}
+.text-input.error:hover, .text-input.error:focus {
+    box-shadow: 0 0 10px 0 red;
+}
+.error-message {
+    font-size: calc(var(--b-text-font-size) * 0.7);
+    color: red;
+}
+
+.btnCalculate button{
+    cursor: pointer;
+    padding: 0.6875rem 4.875rem;
+    color: #242424;
+    font-family: var(--p-font);
+    font-size: var(--b-text-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: var(--border-radius);
+    background: var(--p-green);
+}
+.btnCalculate button:active{
+    background: var(--s-white);
+    color: var(--s-white);
+}
+.probabilityResult{
+    margin-top: var(--c-margin-top);
+    padding: 2.5rem 3rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 30px;
+    background: #F5F5F5;
+}
+.probabilityResult *{
+    color: var(--p-black);
+    font: var(--p-font);
+    font-size: var(--b-text-font-size);
+}
+.probabilityResult p span{
+    font: var(--s-font);
+}
+/*responsive*/
+/*laptop small screen*/
+@media (max-width: 1200px) {
+    .btnCalculate button{
+        padding: 0.6875rem 4rem;
+    }
+}
+/*tablet*/
+@media (max-width: 1000px){
+    .my-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .text-input {
+        width: 100%;
+    }
+}
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+    .probabilityResult{
+        padding: 1.5rem 2rem;
+    }
+}

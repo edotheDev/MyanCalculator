@@ -1,0 +1,9 @@
+.heroText{
+    width: calc(100vw - var(--margin-L-R) * 2);
+    margin-top: var(--a-margin-top);
+    color: rgba(245, 245, 245, 0.50);
+    font-family: var(--p-font);
+    font-size: var(--b-text-font-size);
+    font-style: normal;
+    font-weight: 300;
+}

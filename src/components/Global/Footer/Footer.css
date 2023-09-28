@@ -1,0 +1,32 @@
+.copyright{
+    width: calc(100vw - var(--margin-L-R) * 2);
+    max-width: 1920px;
+    margin: 2.3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-text, .trademark{
+    color: var(--s-white);
+    font-family: var(--s-font);
+    font-size: var(--b-text-font-size);
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.copy-text{
+    text-transform: none;
+}
+.trademark a{
+    color: var(--p-green);
+    text-decoration: none;
+}
+/*responsive*/
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+    .copy-text, .trademark{
+        font-weight: 200;
+        letter-spacing: 0.001rem;
+        font-size: calc(var(--b-text-font-size) * 0.8);
+    }
+}

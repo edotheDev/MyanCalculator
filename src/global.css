@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Petrov Sans';
+    src: url("./assets/fonts/PertovSans/PetrovSans-Trial-Regular.otf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Petrov Sans';
+    src: url("./assets/fonts/PertovSans/PetrovSans-Trial-Light.otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Petrov Sans';
+    src: url("./assets/fonts/PertovSans/PetrovSans-Trial-Book.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Petrov Sans';
+    src: url("./assets/fonts/PertovSans/PetrovSans-Trial-Thin.otf");
+    font-weight: 100;
+}
+
+:root {
+    --p-black: #242424;
+    --p-green: #A8F961;
+    --s-white: #F5F5F5;
+    --p-font: 'Noto Sans Myanmar', sans-serif;
+    --s-font: 'Petrov Sans', sans-serif;
+    --s-margin-top: 100px;
+    --c-margin-top: 75px;
+    --spacer: 75px;
+    --a-margin-top: 50px;
+    --h-text-font-size: 4rem;
+    --b-text-font-size: 1.25rem;
+    --margin-L-R: calc(4vw + 10px);
+    --border-radius: 0.9rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--s-white);
+}
+body {
+    background-color: var(--p-black);
+}
+.pageWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--margin-L-R);
+}
+.section{
+    width: calc(100vw - var(--margin-L-R) * 2);
+    margin: var(--s-margin-top) auto 0 auto;
+    position: relative;
+}
+.footer{
+    margin-top: var(--spacer);
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--p-green) var(--p-black);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--p-black);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--p-green);
+    border-radius: 7px;
+    border: 3px solid var(--p-black);
+}
+/*responsive*/
+/*laptop with big screen*/
+@media (max-width: 1400px) {
+
+}
+/*laptop small screen*/
+@media (max-width: 1200px) {
+    :root{
+        --s-margin-top: 60px;
+        --c-margin-top: 60px;
+        --a-margin-top: 20px;
+        --spacer: 60px;
+        --h-text-font-size: 3rem;
+        --b-text-font-size: 1rem;
+    }
+
+}
+/*tablet*/
+@media (max-width: 1000px){
+    :root{
+
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+    :root{
+        --a-margin-top: 30px;
+        --b-text-font-size: .8rem;
+    }
+}

@@ -1,0 +1,28 @@
+.heading{
+    color: #F5F5F5;
+    font-family: var(--p-font);
+    font-size: var(--h-text-font-size);
+    font-style: normal;
+    font-weight: 200;
+    line-height: 5.625rem;
+}
+.h-main{
+    font-weight: 300;
+}
+.emoji{
+    width: 4rem;
+}
+.logo{
+    width: 24rem;
+}
+/*responsive*/
+/*laptop small screen*/
+@media (max-width: 1200px) {
+    .emoji{
+        width: calc(4rem * 0.8);
+    }
+    .logo{
+        width: calc(24rem * 0.8);
+    }
+
+}
